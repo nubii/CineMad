@@ -1,0 +1,67 @@
+[13-Nov-2015 14:31:40 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/ubuntu/workspace/admin/resizeer/upload.php on line 54
+[13-Nov-2015 14:31:40 UTC] PHP Stack trace:
+[13-Nov-2015 14:31:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 14:31:40 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/admin/resizeer/upload.php:54
+[13-Nov-2015 14:31:40 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/admin/resizeer/upload.php on line 55
+[13-Nov-2015 14:31:40 UTC] PHP Stack trace:
+[13-Nov-2015 14:31:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 14:31:40 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/admin/resizeer/upload.php:55
+[13-Nov-2015 14:32:38 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'img_upload' in /home/ubuntu/workspace/admin/resizeer/upload.php on line 54
+[13-Nov-2015 14:32:38 UTC] PHP Stack trace:
+[13-Nov-2015 14:32:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 14:32:38 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/admin/resizeer/upload.php:54
+[13-Nov-2015 14:32:38 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ubuntu/workspace/admin/resizeer/upload.php on line 55
+[13-Nov-2015 14:32:38 UTC] PHP Stack trace:
+[13-Nov-2015 14:32:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 14:32:38 UTC] PHP   2. mysqli->query() /home/ubuntu/workspace/admin/resizeer/upload.php:55
+[13-Nov-2015 14:46:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/admin/resizeer/upload.php on line 25
+[13-Nov-2015 15:03:08 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/admin/resizeer/upload.php on line 15
+[13-Nov-2015 15:04:10 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/admin/resizeer/imageResizer.php on line 30
+[13-Nov-2015 15:04:10 UTC] PHP Stack trace:
+[13-Nov-2015 15:04:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 15:04:10 UTC] PHP   2. imageResizer->resize() /home/ubuntu/workspace/admin/resizeer/upload.php:28
+[13-Nov-2015 15:04:10 UTC] PHP   3. imageResizer->getWidth() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:58
+[13-Nov-2015 15:04:10 UTC] PHP   4. imagesx() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:30
+[13-Nov-2015 15:04:10 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/admin/resizeer/imageResizer.php on line 35
+[13-Nov-2015 15:04:10 UTC] PHP Stack trace:
+[13-Nov-2015 15:04:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 15:04:10 UTC] PHP   2. imageResizer->resize() /home/ubuntu/workspace/admin/resizeer/upload.php:28
+[13-Nov-2015 15:04:10 UTC] PHP   3. imageResizer->getHeight() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:58
+[13-Nov-2015 15:04:10 UTC] PHP   4. imagesy() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:35
+[13-Nov-2015 15:04:10 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/ubuntu/workspace/admin/resizeer/imageResizer.php on line 58
+[13-Nov-2015 15:04:10 UTC] PHP Stack trace:
+[13-Nov-2015 15:04:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 15:04:10 UTC] PHP   2. imageResizer->resize() /home/ubuntu/workspace/admin/resizeer/upload.php:28
+[13-Nov-2015 15:04:10 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:58
+[13-Nov-2015 15:04:51 UTC] PHP Warning:  imagesx() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/admin/resizeer/imageResizer.php on line 30
+[13-Nov-2015 15:04:51 UTC] PHP Stack trace:
+[13-Nov-2015 15:04:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 15:04:51 UTC] PHP   2. imageResizer->resize() /home/ubuntu/workspace/admin/resizeer/upload.php:28
+[13-Nov-2015 15:04:51 UTC] PHP   3. imageResizer->getWidth() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:58
+[13-Nov-2015 15:04:51 UTC] PHP   4. imagesx() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:30
+[13-Nov-2015 15:04:51 UTC] PHP Warning:  imagesy() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/admin/resizeer/imageResizer.php on line 35
+[13-Nov-2015 15:04:51 UTC] PHP Stack trace:
+[13-Nov-2015 15:04:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 15:04:51 UTC] PHP   2. imageResizer->resize() /home/ubuntu/workspace/admin/resizeer/upload.php:28
+[13-Nov-2015 15:04:51 UTC] PHP   3. imageResizer->getHeight() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:58
+[13-Nov-2015 15:04:51 UTC] PHP   4. imagesy() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:35
+[13-Nov-2015 15:04:51 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, null given in /home/ubuntu/workspace/admin/resizeer/imageResizer.php on line 58
+[13-Nov-2015 15:04:51 UTC] PHP Stack trace:
+[13-Nov-2015 15:04:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[13-Nov-2015 15:04:51 UTC] PHP   2. imageResizer->resize() /home/ubuntu/workspace/admin/resizeer/upload.php:28
+[13-Nov-2015 15:04:51 UTC] PHP   3. imagecopyresampled() /home/ubuntu/workspace/admin/resizeer/imageResizer.php:58
+[13-Nov-2015 15:06:25 UTC] PHP Fatal error:  Call to a member function save() on a non-object in /home/ubuntu/workspace/admin/resizeer/upload.php on line 38
+[13-Nov-2015 15:06:25 UTC] PHP Stack trace:
+[13-Nov-2015 15:06:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/resizeer/upload.php:0
+[06-Dec-2015 21:09:32 UTC] PHP Warning:  require_once(includes/connection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/menu/dishedit.php on line 1
+[06-Dec-2015 21:09:32 UTC] PHP Stack trace:
+[06-Dec-2015 21:09:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/menu/dishedit.php:0
+[06-Dec-2015 21:09:32 UTC] PHP Fatal error:  require_once(): Failed opening required 'includes/connection.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/menu/dishedit.php on line 1
+[06-Dec-2015 21:09:32 UTC] PHP Stack trace:
+[06-Dec-2015 21:09:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/menu/dishedit.php:0
+[06-Dec-2015 21:10:13 UTC] PHP Warning:  require_once(includes/connection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/menu/dishedit.php on line 1
+[06-Dec-2015 21:10:13 UTC] PHP Stack trace:
+[06-Dec-2015 21:10:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/menu/dishedit.php:0
+[06-Dec-2015 21:10:13 UTC] PHP Fatal error:  require_once(): Failed opening required 'includes/connection.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/menu/dishedit.php on line 1
+[06-Dec-2015 21:10:13 UTC] PHP Stack trace:
+[06-Dec-2015 21:10:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/menu/dishedit.php:0

@@ -1,0 +1,106 @@
+[13-Nov-2015 13:34:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/admin/delete.php on line 9
+[13-Nov-2015 13:34:55 UTC] PHP Stack trace:
+[13-Nov-2015 13:34:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/delete.php:0
+[13-Nov-2015 13:34:55 UTC] PHP   2. mysqli_fetch_array() /home/ubuntu/workspace/admin/delete.php:9
+[13-Nov-2015 13:37:07 UTC] PHP Warning:  copy(../img/38.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/upload.php on line 39
+[13-Nov-2015 13:37:07 UTC] PHP Stack trace:
+[13-Nov-2015 13:37:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/upload.php:0
+[13-Nov-2015 13:37:07 UTC] PHP   2. copy() /home/ubuntu/workspace/admin/upload.php:39
+[13-Nov-2015 13:55:56 UTC] PHP Warning:  unlink(../img/53.png): No such file or directory in /home/ubuntu/workspace/admin/deletepro.php on line 11
+[13-Nov-2015 13:55:56 UTC] PHP Stack trace:
+[13-Nov-2015 13:55:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletepro.php:0
+[13-Nov-2015 13:55:56 UTC] PHP   2. unlink() /home/ubuntu/workspace/admin/deletepro.php:11
+[13-Nov-2015 17:42:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/admin/includes/nav.php on line 38
+[13-Nov-2015 17:42:58 UTC] PHP Stack trace:
+[13-Nov-2015 17:42:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[13-Nov-2015 17:42:58 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:6
+[13-Nov-2015 17:43:47 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/admin/includes/nav.php on line 38
+[13-Nov-2015 17:43:47 UTC] PHP Stack trace:
+[13-Nov-2015 17:43:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[13-Nov-2015 17:43:47 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:6
+[13-Nov-2015 17:44:13 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/admin/includes/nav.php on line 30
+[13-Nov-2015 17:44:13 UTC] PHP Stack trace:
+[13-Nov-2015 17:44:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[13-Nov-2015 17:44:13 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:6
+[13-Nov-2015 17:45:05 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/admin/includes/nav.php on line 19
+[13-Nov-2015 17:45:05 UTC] PHP Stack trace:
+[13-Nov-2015 17:45:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[13-Nov-2015 17:45:05 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:6
+[13-Nov-2015 17:45:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/admin/includes/nav.php on line 11
+[13-Nov-2015 17:45:19 UTC] PHP Stack trace:
+[13-Nov-2015 17:45:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[13-Nov-2015 17:45:19 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:6
+[13-Nov-2015 17:45:19 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/header.php:51
+[13-Nov-2015 17:45:19 UTC] PHP   4. mysqli_fetch_array() /home/ubuntu/workspace/admin/includes/nav.php:11
+[06-Dec-2015 20:52:15 UTC] PHP Warning:  unlink(): No such file or directory in /home/ubuntu/workspace/admin/deletedrink.php on line 15
+[06-Dec-2015 20:52:15 UTC] PHP Stack trace:
+[06-Dec-2015 20:52:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletedrink.php:0
+[06-Dec-2015 20:52:15 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletedrink.php:15
+[06-Dec-2015 20:53:18 UTC] PHP Warning:  unlink(): No such file or directory in /home/ubuntu/workspace/admin/deletedrink.php on line 15
+[06-Dec-2015 20:53:18 UTC] PHP Stack trace:
+[06-Dec-2015 20:53:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletedrink.php:0
+[06-Dec-2015 20:53:18 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletedrink.php:15
+[06-Dec-2015 21:49:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/admin/newsitem.php on line 13
+[06-Dec-2015 21:49:47 UTC] PHP Stack trace:
+[06-Dec-2015 21:49:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/newsitem.php:0
+[06-Dec-2015 21:49:47 UTC] PHP   2. mysqli_fetch_array(*uninitialized*) /home/ubuntu/workspace/admin/newsitem.php:13
+[06-Dec-2015 22:11:13 UTC] PHP Warning:  unlink(../img/): Is a directory in /home/ubuntu/workspace/admin/deletenews.php on line 15
+[06-Dec-2015 22:11:13 UTC] PHP Stack trace:
+[06-Dec-2015 22:11:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletenews.php:0
+[06-Dec-2015 22:11:13 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletenews.php:15
+[07-Dec-2015 10:15:41 UTC] PHP Warning:  unlink(): No such file or directory in /home/ubuntu/workspace/admin/deletedish.php on line 15
+[07-Dec-2015 10:15:41 UTC] PHP Stack trace:
+[07-Dec-2015 10:15:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletedish.php:0
+[07-Dec-2015 10:15:41 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletedish.php:15
+[07-Dec-2015 10:15:50 UTC] PHP Warning:  unlink(): No such file or directory in /home/ubuntu/workspace/admin/deletedish.php on line 15
+[07-Dec-2015 10:15:50 UTC] PHP Stack trace:
+[07-Dec-2015 10:15:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletedish.php:0
+[07-Dec-2015 10:15:50 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletedish.php:15
+[07-Dec-2015 10:15:57 UTC] PHP Warning:  unlink(): No such file or directory in /home/ubuntu/workspace/admin/deletedish.php on line 15
+[07-Dec-2015 10:15:57 UTC] PHP Stack trace:
+[07-Dec-2015 10:15:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletedish.php:0
+[07-Dec-2015 10:15:57 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletedish.php:15
+[07-Dec-2015 11:00:03 UTC] PHP Warning:  copy(): Filename cannot be empty in /home/ubuntu/workspace/admin/upload.php on line 43
+[07-Dec-2015 11:00:03 UTC] PHP Stack trace:
+[07-Dec-2015 11:00:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/upload.php:0
+[07-Dec-2015 11:00:03 UTC] PHP   2. copy(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/admin/upload.php:43
+[07-Dec-2015 11:16:46 UTC] PHP Warning:  unlink(../img/): Is a directory in /home/ubuntu/workspace/admin/deletepro.php on line 15
+[07-Dec-2015 11:16:46 UTC] PHP Stack trace:
+[07-Dec-2015 11:16:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletepro.php:0
+[07-Dec-2015 11:16:46 UTC] PHP   2. unlink() /home/ubuntu/workspace/admin/deletepro.php:15
+[07-Dec-2015 11:17:38 UTC] PHP Warning:  unlink(../img/SaladBar.png): No such file or directory in /home/ubuntu/workspace/admin/deletepro.php on line 15
+[07-Dec-2015 11:17:38 UTC] PHP Stack trace:
+[07-Dec-2015 11:17:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletepro.php:0
+[07-Dec-2015 11:17:38 UTC] PHP   2. unlink() /home/ubuntu/workspace/admin/deletepro.php:15
+[07-Dec-2015 11:23:05 UTC] PHP Warning:  unlink(../img/): Is a directory in /home/ubuntu/workspace/admin/deletenews.php on line 15
+[07-Dec-2015 11:23:05 UTC] PHP Stack trace:
+[07-Dec-2015 11:23:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletenews.php:0
+[07-Dec-2015 11:23:05 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletenews.php:15
+[07-Dec-2015 11:23:33 UTC] PHP Warning:  unlink(../img/): Is a directory in /home/ubuntu/workspace/admin/deletenews.php on line 15
+[07-Dec-2015 11:23:33 UTC] PHP Stack trace:
+[07-Dec-2015 11:23:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletenews.php:0
+[07-Dec-2015 11:23:33 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletenews.php:15
+[07-Dec-2015 12:12:33 UTC] PHP Warning:  unlink(../img/): Is a directory in /home/ubuntu/workspace/admin/deletecontact.php on line 15
+[07-Dec-2015 12:12:33 UTC] PHP Stack trace:
+[07-Dec-2015 12:12:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletecontact.php:0
+[07-Dec-2015 12:12:33 UTC] PHP   2. unlink() /home/ubuntu/workspace/admin/deletecontact.php:15
+[07-Dec-2015 14:24:11 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname in /home/ubuntu/workspace/admin/includes/nav.php on line 1
+[07-Dec-2015 14:24:11 UTC] PHP Stack trace:
+[07-Dec-2015 14:24:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/dailyspecial.php:0
+[07-Dec-2015 14:24:11 UTC] PHP   2. include() /home/ubuntu/workspace/admin/dailyspecial.php:2
+[07-Dec-2015 14:24:11 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/header.php:63
+[07-Dec-2015 14:24:11 UTC] PHP   4. mysqli_connect(*uninitialized*, *uninitialized*, *uninitialized*) /home/ubuntu/workspace/admin/includes/nav.php:1
+[07-Dec-2015 14:24:11 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No address associated with hostname in /home/ubuntu/workspace/admin/includes/nav.php on line 1
+[07-Dec-2015 14:24:11 UTC] PHP Stack trace:
+[07-Dec-2015 14:24:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/dailyspecial.php:0
+[07-Dec-2015 14:24:11 UTC] PHP   2. include() /home/ubuntu/workspace/admin/dailyspecial.php:2
+[07-Dec-2015 14:24:11 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/header.php:63
+[07-Dec-2015 14:24:11 UTC] PHP   4. mysqli_connect(*uninitialized*, *uninitialized*, *uninitialized*) /home/ubuntu/workspace/admin/includes/nav.php:1
+[07-Dec-2015 14:24:11 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/admin/includes/nav.php on line 4
+[07-Dec-2015 14:24:11 UTC] PHP Stack trace:
+[07-Dec-2015 14:24:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/dailyspecial.php:0
+[07-Dec-2015 14:24:11 UTC] PHP   2. include() /home/ubuntu/workspace/admin/dailyspecial.php:2
+[07-Dec-2015 14:24:11 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/header.php:63
+[07-Dec-2015 14:24:11 UTC] PHP   4. mysqli_error(*uninitialized*) /home/ubuntu/workspace/admin/includes/nav.php:4
+[07-Dec-2015 14:29:20 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/admin/dailyspecial.php on line 33
+[07-Dec-2015 14:31:14 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/admin/dailyspecial.php on line 91
