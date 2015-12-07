@@ -47,7 +47,7 @@ $row = mysqli_fetch_array($result);
       
       
  
-      <p><a href="deletedaily.php?id=<?php echo $row['menu_url'] ?>" onclick="return confirm('Are you sure you want to delete this dailyspecial?')">Delete this dailyspecial</a></p>
+      <p><a href="deletedaily.php?id=<?php echo $row['dailyspecial_id'] ?>" onclick="return confirm('Are you sure you want to delete this daily special?')">Delete this daily special</a></p>
  
 
         </section>

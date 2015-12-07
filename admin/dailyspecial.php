@@ -5,7 +5,7 @@
         <div class="container">
             <h2><em>Edit</em> Daily special</h2>
             <div class="row box-2">
-                <h3><a href="createdish.php">Create a new daily special</a></h3>
+                <h3><a href="createdaily.php">Create a new daily special</a></h3>
 
         <?php
 

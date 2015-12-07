@@ -104,3 +104,15 @@
 [07-Dec-2015 14:24:11 UTC] PHP   4. mysqli_error(*uninitialized*) /home/ubuntu/workspace/admin/includes/nav.php:4
 [07-Dec-2015 14:29:20 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/admin/dailyspecial.php on line 33
 [07-Dec-2015 14:31:14 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/admin/dailyspecial.php on line 91
+[07-Dec-2015 20:15:05 UTC] PHP Warning:  unlink(../img/): Is a directory in /home/ubuntu/workspace/admin/deletecontact.php on line 15
+[07-Dec-2015 20:15:05 UTC] PHP Stack trace:
+[07-Dec-2015 20:15:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletecontact.php:0
+[07-Dec-2015 20:15:05 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletecontact.php:15
+[07-Dec-2015 20:25:34 UTC] PHP Warning:  unlink(): No such file or directory in /home/ubuntu/workspace/admin/deletedaily.php on line 15
+[07-Dec-2015 20:25:34 UTC] PHP Stack trace:
+[07-Dec-2015 20:25:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletedaily.php:0
+[07-Dec-2015 20:25:34 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletedaily.php:15
+[07-Dec-2015 20:26:48 UTC] PHP Warning:  unlink(../img/): Is a directory in /home/ubuntu/workspace/admin/deletedaily.php on line 15
+[07-Dec-2015 20:26:48 UTC] PHP Stack trace:
+[07-Dec-2015 20:26:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletedaily.php:0
+[07-Dec-2015 20:26:48 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletedaily.php:15
