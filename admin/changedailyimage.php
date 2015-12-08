@@ -9,8 +9,8 @@
 
 <?php
 
-$id= trim(htmlspecialchars(mysqli_real_escape_string($_GET['id'])));
-$daily= trim(htmlspecialchars(mysqli_real_escape_string($_GET['daily'])));
+$id= trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['id'])));
+$daily= trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['daily'])));
 
 ?>
 

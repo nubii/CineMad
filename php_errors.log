@@ -135,3 +135,19 @@
 [08-Dec-2015 09:44:31 UTC] PHP Stack trace:
 [08-Dec-2015 09:44:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/dailyedit.php:0
 [08-Dec-2015 09:44:31 UTC] PHP   2. mysqli_real_escape_string(*uninitialized*) /home/ubuntu/workspace/admin/dailyedit.php:12
+[08-Dec-2015 12:18:50 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/admin/insertnews.php on line 9
+[08-Dec-2015 12:18:50 UTC] PHP Stack trace:
+[08-Dec-2015 12:18:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/insertnews.php:0
+[08-Dec-2015 12:18:50 UTC] PHP   2. mysqli_real_escape_string(*uninitialized*) /home/ubuntu/workspace/admin/insertnews.php:9
+[08-Dec-2015 12:18:50 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/admin/insertnews.php on line 10
+[08-Dec-2015 12:18:50 UTC] PHP Stack trace:
+[08-Dec-2015 12:18:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/insertnews.php:0
+[08-Dec-2015 12:18:50 UTC] PHP   2. mysqli_real_escape_string(*uninitialized*) /home/ubuntu/workspace/admin/insertnews.php:10
+[08-Dec-2015 12:18:58 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/admin/newsitem.php on line 10
+[08-Dec-2015 12:18:58 UTC] PHP Stack trace:
+[08-Dec-2015 12:18:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/newsitem.php:0
+[08-Dec-2015 12:18:58 UTC] PHP   2. mysqli_real_escape_string(*uninitialized*) /home/ubuntu/workspace/admin/newsitem.php:10
+[08-Dec-2015 12:19:43 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/admin/newsitem.php on line 10
+[08-Dec-2015 12:19:43 UTC] PHP Stack trace:
+[08-Dec-2015 12:19:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/newsitem.php:0
+[08-Dec-2015 12:19:43 UTC] PHP   2. mysqli_real_escape_string(*uninitialized*) /home/ubuntu/workspace/admin/newsitem.php:10

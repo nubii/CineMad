@@ -7,7 +7,7 @@
 <?php define( "TITLE", "Images | Admin Panel"); include( 'includes/header.php'); ?>
 
 <?php
-$contact = trim(htmlspecialchars(mysqli_real_escape_string($_GET['item'])));
+$contact = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['item'])));
 $menu = "SELECT * FROM  contact WHERE id ='$contact' ";
 $result = mysqli_query($conn, $menu);
 $row = mysqli_fetch_array($result);

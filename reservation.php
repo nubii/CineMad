@@ -1,5 +1,6 @@
 
 <?php define( "TITLE", "Reservation | CineMad"); include( 'includes/header.php'); ?>
+<?php require_once("admin/includes/connection.php"); ?>
 <!--========================================================
                               CONTENT
     =========================================================-->
@@ -9,9 +10,9 @@
 <?php
 // post check ---------------------------------------------------------- ordernr  odate  oantal  otid  oname  ophone  tid  otimestamp
 if ($_POST == true){
-    $vdate = "$_POST[odate]";
-    $vtid = "$_POST[otid]";
-    $vantal = "$_POST[oantal]";
+$vdate = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['odate'])));
+$vtid = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['otid'])));
+$vantal = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['oantal'])));
 } else { echo "error";}// later add a return to main page if no valid post
 echo $vdate. " " .$vtid . " " .$vantal;
 //print out--------------------------------------------------------------

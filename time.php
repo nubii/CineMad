@@ -53,7 +53,7 @@ $vantal = 4;
 //$vtid = "T5";
 //echo $vdate. " " .$vtid . " " .$day. "<br>";
 if ($_POST == true){ 
-    $vdate = mysqli_real_escape_string($_POST[$conn 'cdate']);
+    $vdate = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['cdate'])));
     $vdate = "$_POST[cdate]";
 } else {$vdate = date("d-m-Y"); $vtid = "T5, T6";}
 //$vdate = "$_POST[sdate]";

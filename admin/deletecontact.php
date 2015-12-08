@@ -4,7 +4,7 @@
 <?php confirm_logged_in(); ?>
 <?php require_once("includes/admin.php"); ?>
 <?php
-$id= trim(htmlspecialchars(mysqli_real_escape_string($_GET['id'])));
+$id= trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['id'])));
 $query = "SELECT * FROM contact WHERE id='$id'";
 $result = mysqli_query($connection, $query) or die('Error, query failed');
 

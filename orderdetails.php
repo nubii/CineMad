@@ -1,5 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <?php define( "TITLE", "Orderdetails | CineMad"); include( 'includes/header.php'); ?>
+<?php require_once("admin/includes/connection.php"); ?>
 <!--========================================================
                               CONTENT
     =========================================================-->
@@ -8,11 +9,12 @@
 
 <?php
 if ($_POST == true){
-    $vdate = "$_POST[odate]";
-    $vtidet = "$_POST[otid]";
-    $vtidto = "$_POST[otidto]";
-    $vantal = "$_POST[oantal]";
-    $vbord = "$_POST[obord]";
+$vdate = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['odate'])));
+$vtidet = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['otidet'])));
+$vtidto = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['otidto'])));
+$vantal = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['oantal'])));
+$vbord = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['obord'])));
+
 } else { echo "error";}
 
 
