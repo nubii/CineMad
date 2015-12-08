@@ -6,8 +6,8 @@
 
 
 <?php
-$title = $_POST['title'];
-$content = $_POST['content'];
+$title = trim(htmlspecialchars(mysqli_real_escape_string($_POST['title'])));
+$content = trim(htmlspecialchars(mysqli_real_escape_string($_POST['content'])));
 
 ?>
 

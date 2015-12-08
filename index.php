@@ -133,10 +133,8 @@ while($row = mysqli_fetch_array($result))
     </section>
     <section class="parallax parallax1" data-parallax-speed="-0.4">
         <div class="container">
-            <h2><em>Our </em>Experience</h2>
-            <p class="indents-2">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel
-                mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Vestibulum volutpat turpis ut massa commodo, quis
-                aliquam massa facilisis.Integer convallis orci </p>
+            <?php include( 'dailyspecial.php'); ?>
+            <br>
             <a href="menu.php" class="btn">View full menu</a>
         </div>
     </section>

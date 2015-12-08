@@ -7,7 +7,7 @@
 <?php define( "TITLE", "Images | Admin Panel"); include( 'includes/header.php'); ?>
 
 <?php
-$id = $_GET['item'];
+$id= trim(htmlspecialchars(mysqli_real_escape_string($_GET['item'])));
 $menu = "SELECT * FROM  dailyspecial WHERE dailyspecial_id ='$id' ";
 $result = mysqli_query($conn, $menu);
 $row = mysqli_fetch_array($result);

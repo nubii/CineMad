@@ -6,10 +6,10 @@
 
 
 <?php
-$title = $_POST['title'];
-$day = $_POST['day'];
-$content = $_POST['content'];
-$dailyspecial_id = $_POST['dailyspecial_id'];
+$title = trim(htmlspecialchars(mysqli_real_escape_string($_POST['title'])));
+$day = trim(htmlspecialchars(mysqli_real_escape_string($_POST['day'])));
+$content = trim(htmlspecialchars(mysqli_real_escape_string($_POST['content'])));
+$dailyspecial_id = trim(htmlspecialchars(mysqli_real_escape_string($_POST['dailyspecial_id'])));
 ?>
 
 <?php

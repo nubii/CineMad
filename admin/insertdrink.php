@@ -6,12 +6,14 @@
 
 
 <?php
-$title = $_POST['title'];
-$price = $_POST['price'];
-$suggested = $_POST['suggested'];
-$content = $_POST['content'];
-$menu_id = $_POST['drink_id'];
-$menu_url = $_POST['drink_url'];
+$title = trim(htmlspecialchars(mysqli_real_escape_string($_POST['title'])));
+$price = trim(htmlspecialchars(mysqli_real_escape_string($_POST['price'])));
+$suggested = trim(htmlspecialchars(mysqli_real_escape_string($_POST['suggested'])));
+$content = trim(htmlspecialchars(mysqli_real_escape_string($_POST['content'])));
+$menu_id = trim(htmlspecialchars(mysqli_real_escape_string($_POST['drink_id'])));
+$menu_url = trim(htmlspecialchars(mysqli_real_escape_string($_POST['drink_url'])));
+
+
 
 ?>
 

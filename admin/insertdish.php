@@ -6,11 +6,12 @@
 
 
 <?php
-$title = $_POST['title'];
-$price = $_POST['price'];
-$suggested = $_POST['suggested'];
-$content = $_POST['content'];
-$menu_url = $_POST['menu_url'];
+$title = trim(htmlspecialchars(mysqli_real_escape_string($_POST['title'])));
+$price = trim(htmlspecialchars(mysqli_real_escape_string($_POST['price'])));
+$suggested = trim(htmlspecialchars(mysqli_real_escape_string($_POST['suggested'])));
+$content = trim(htmlspecialchars(mysqli_real_escape_string($_POST['content'])));
+$menu_url = trim(htmlspecialchars(mysqli_real_escape_string($_POST['menu_url'])));
+
 
 ?>
 

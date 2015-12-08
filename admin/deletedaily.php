@@ -4,7 +4,7 @@
 <?php confirm_logged_in(); ?>
 <?php require_once("includes/admin.php"); ?>
 <?php
-$id=$_GET['id'];
+$id= trim(htmlspecialchars(mysqli_real_escape_string($_GET['id'])));
 $query = "SELECT * FROM dailyspecial WHERE dailyspecial_id='$id'";
 $result = mysqli_query($connection, $query) or die('Error, query failed');
 

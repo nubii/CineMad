@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="CSS/style.css" type="text/css">
-
+<?php require_once("admin/includes/connection.php"); ?>
 <?php define( "TITLE", "Time | CineMad"); include( 'includes/header.php'); ?>
 <!--========================================================
                               CONTENT
@@ -52,7 +52,8 @@ $vantal = 4;
 //$day = date("N");
 //$vtid = "T5";
 //echo $vdate. " " .$vtid . " " .$day. "<br>";
-if ($_POST == true){
+if ($_POST == true){ 
+    $vdate = mysqli_real_escape_string($_POST[$conn 'cdate']);
     $vdate = "$_POST[cdate]";
 } else {$vdate = date("d-m-Y"); $vtid = "T5, T6";}
 //$vdate = "$_POST[sdate]";

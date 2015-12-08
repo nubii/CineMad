@@ -6,13 +6,15 @@
 
 
 <?php
-$fax = $_POST['fax'];
-$address = $_POST['address'];
-$telefone = $_POST['telefone'];
-$content = $_POST['content'];
-$email = $_POST['email'];
-$hours = $_POST['hours'];
-$id = $_POST['id'];
+$fax = trim(htmlspecialchars(mysqli_real_escape_string($_POST['fax'])));
+$address = trim(htmlspecialchars(mysqli_real_escape_string($_POST['address'])));
+$telefone = trim(htmlspecialchars(mysqli_real_escape_string($_POST['telefone'])));
+$content = trim(htmlspecialchars(mysqli_real_escape_string($_POST['content'])));
+$email = trim(htmlspecialchars(mysqli_real_escape_string($_POST['email'])));
+$hours = trim(htmlspecialchars(mysqli_real_escape_string($_POST['hours'])));
+$id = trim(htmlspecialchars(mysqli_real_escape_string($_POST['id'])));
+
+
 ?>
 
 <?php
