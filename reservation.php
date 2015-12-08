@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="css/style.css" type="text/css">
-<?php define( "TITLE", "Time | CineMad"); include( 'includes/header.php'); ?>
+
+<?php define( "TITLE", "Reservation | CineMad"); include( 'includes/header.php'); ?>
 <!--========================================================
                               CONTENT
     =========================================================-->

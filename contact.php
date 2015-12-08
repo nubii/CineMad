@@ -19,7 +19,7 @@
                                 <label class="name">
                                     First Name:
                                     <input type="text" name="firstname" placeholder="" value=""
-                                           data-constraints="@Required @JustLetters"/>                
+                                           data-constraints="@Required"/>                
                                     <span class="empty-message">*This field is required.</span>
                                     <span class="error-message">*This is not a valid name.</span>
                                 </label>
@@ -27,7 +27,7 @@
 								<label class="name">
                                     Last Name:
                                     <input type="text" name="lastname" placeholder="" value=""
-                                           data-constraints="@Required @JustLetters"/>                
+                                           data-constraints="@Required"/>                
                                     <span class="empty-message">*This field is required.</span>
                                     <span class="error-message">*This is not a valid name.</span>
                                 </label>
@@ -37,7 +37,7 @@
                                 <label class="message">
                                     Message:
                                     <textarea name="message" placeholder=""
-                                              data-constraints='@Required @Length(min=20,max=999999)'></textarea>                
+                                              data-constraints='@Required'></textarea>                
                                     <span class="empty-message">*This field is required.</span>
                                     <span class="error-message">*The message is too short.</span>
                                 </label>

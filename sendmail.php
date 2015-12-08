@@ -14,8 +14,9 @@ $row = mysqli_fetch_array($result);
 <?php
 $mymail = $row['email'];
 $firstname = $_POST['firstname'];
-$lasttname = $_POST['lastname'];
+$lastname = $_POST['lastname'];
 $message = $_POST['message'];
+
 $regexp = "/^[^0-9][A-z0-9_-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_-]+)*[.][A-z]{2,4}$/";
 
 if (!preg_match($regexp,$mymail))
@@ -26,7 +27,7 @@ if (!preg_match($regexp,$mymail))
  elseif (empty($firstname) || empty($message) || empty($lastname)) 
 	{
 		echo "hallojsa2";
-		header("Location:https://limitless-brushlands-5886.herokuapp.com/contact.php?error=2");}
+		header("Location:https://limitless-brushlands-5886.herokuapp.com/contact.php?error=2&'$lastname'");}
 
  elseif ($_POST['submit'])
 {
