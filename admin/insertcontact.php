@@ -26,6 +26,6 @@ $result = mysqli_query($connection, $query) or die('Error, query failed');
 
 mysqli_close($connection);
 
-// Redirect to menu.php.
+// Redirect to contactmenu.php.
 header("location:contactmenu.php");
 ?>

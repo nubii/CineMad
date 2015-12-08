@@ -4,7 +4,7 @@
 <?php confirm_logged_in(); ?>
 <?php require_once("includes/admin.php"); ?>
 
-<?php define( "TITLE", "Images | Admin Panel"); include( 'includes/header.php'); ?>
+<?php define( "TITLE", "News Item | Admin Panel"); include( 'includes/header.php'); ?>
 
 <?php
 $news = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_GET['item'])));

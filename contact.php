@@ -1,5 +1,5 @@
 <?php 
-    define("TITLE", "Contacts | CineMad");
+    define("TITLE", "Contact | CineMad");
     include('includes/header.php');
 ?>
 

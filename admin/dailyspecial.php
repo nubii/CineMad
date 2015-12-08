@@ -1,5 +1,10 @@
+<?php require_once("includes/connection.php"); ?>
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+<?php confirm_logged_in(); ?>
+<?php require_once("includes/admin.php"); ?>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<?php define( "TITLE", "Orderdetails | CineMad"); include( 'includes/header.php'); ?>
+<?php define( "TITLE", "Daily Special | CineMad"); include( 'includes/header.php'); ?>
 <main>
     <section class="well well__offset-3">
         <div class="container">

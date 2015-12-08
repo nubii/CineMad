@@ -1,8 +1,9 @@
 <?php require_once("includes/connection.php"); ?>
 <?php require_once("includes/session.php"); ?>
 <?php require_once("includes/functions.php"); ?>
+<?php require_once("includes/admin.php"); ?>
 <?php confirm_logged_in(); ?>
-<?php define( "TITLE", "Reservation | CineMad"); include( 'includes/header.php'); ?>
+<?php define( "TITLE", "Opening Hours | CineMad"); include( 'includes/header.php'); ?>
 <!--========================================================
                               CONTENT
     =========================================================-->

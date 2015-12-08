@@ -31,7 +31,7 @@ $result = mysqli_query($connection, $query) or die('Error, query failed');
 <?php
 mysqli_close($connection);
 
-// Redirect to delete.php.
-//header("location:menu.php");
+// Redirect to menu.php.
+header("location:menu.php");
 
 ?> 

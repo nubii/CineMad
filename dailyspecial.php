@@ -1,6 +1,6 @@
 
         <?php
-
+//included from dailyspecial.php on index.php
         $daily = "SELECT * FROM dailyspecial ORDER BY dailyspecial_id ASC";
         $result = mysqli_query($conn, $daily);
         while($row = mysqli_fetch_array($result)) {

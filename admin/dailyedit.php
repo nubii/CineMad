@@ -21,7 +21,7 @@ $result = mysqli_query($connection, $query) or die('Error, query failed');
 
 mysqli_close($connection);
 
-// Redirect to delete.php.
+// Redirect to dailyspecial.php.
 header("location:dailyspecial.php");
 
 ?>

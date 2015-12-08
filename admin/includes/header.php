@@ -3,6 +3,8 @@
 <?php require_once("includes/functions.php"); ?>
 <?php
     $companyName = "CineMad";
+    
+    $userName = $_SESSION['user_name'];
 ?>
 
 
@@ -50,8 +52,7 @@
                         <a href="./"><?php echo $companyName; ?></a>
                     </h1>
                 </div>
-
-                <nav class="nav">
+			    <nav class="nav">
                     <ul class="sf-menu">
                     <?php include('includes/nav.php'); ?>
                     </ul>

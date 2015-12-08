@@ -4,7 +4,7 @@
 <?php confirm_logged_in(); ?>
 <?php require_once("includes/admin.php"); ?>
 
-<?php define( "TITLE", "Images | Admin Panel"); include( 'includes/header.php'); ?>
+<?php define( "TITLE", "Create Drink | Admin Panel"); include( 'includes/header.php'); ?>
 
 <?php
 ?>

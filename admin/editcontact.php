@@ -10,7 +10,7 @@ $fax = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['fax'
 $address = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['address'])));
 $telefone = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['telefone'])));
 $content = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['content'])));
-$email = trim(htmlspecialchars(mysqli_real_escape_string($connection,, $_POST['email'])));
+$email = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['email'])));
 $hours = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['hours'])));
 $id = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['id'])));
 

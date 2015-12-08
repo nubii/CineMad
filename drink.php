@@ -1,6 +1,6 @@
 <?php
 	
-	define("TITLE", "Dish | CineMad");
+	define("TITLE", "Drink | CineMad");
 	
 	include('includes/header.php');
 	

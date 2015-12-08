@@ -16,13 +16,6 @@ $vantal = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['oantal'
 //print out--------------------------------------------------------------
 ?><div id="visualtable"> <img src="img/tables.jpg" alt="tables" id="ordertablebg">
 <?php
-/*$conn = mysqli_connect("localhost","root","pwd");
-
-if(!$conn){
-    die("could not connect: ". mysqli_error($conn));
-}
-mysqli_set_charset($conn, "utf8");
-mysqli_select_db($conn, "restaurant");*/
 // check date ----------------------------------------------------
 $o1 = 0;
 $o2 = 0;
@@ -38,28 +31,7 @@ $p3 = 0;
 $p4 = 0;
 $q1 = 0;
 $q2 = 0;
-/*
-$tablestaken = "SELECT * FROM bestilling WHERE odate='$_POST[odate]' ORDER BY ordernr DESC";
-$result = mysqli_query($conn, $tablestaken);
-$stack = array();
 
-while($row = mysqli_fetch_array($result)) {    ?>
-
-    <div class="holdtarget"> <?php
-    //   echo $row['odate'] . " " . $row['obord'] . " " . $row['otid'] . " " . $row['otidto'] . " " . $row['oname'];
-
-    if((strpos($vtid,$row['otid']) !== false) || (strpos($vtid,$row['otidto']) !== false) && $vdate == $row['odate']){
-        ?><div class="target"><?php echo "<br>overlap time on same day" .$row['odate'] . " " . $row['obord'] . " " . $row['otid'] . " " . $row['otidto'] . " " . $row['oname'];
-        ?> </div>
-        <?php
-
-        array_push($stack, $row['obord']);
-
-    }
-    ?> </div><?php }
-
-print_r($stack);
-*/
 //create vtidto from input
 
 if ($vtid == "T01"){
@@ -138,98 +110,6 @@ elseif ($vtid == "T13") {
 }
 
 // check date end ----------------------------------------------------
-/*$result = mysqli_query($conn, $tablestaken);
-$bestillingArray = array();
-$index = 0;
-while($row = $result->fetch_assoc())
-{
-    $bestillingArray[$index] = $row;
-    $index++;
-}
-
-print_r($bestillingArray);*/
-/*if(strpos($row['odate'],$vdate) !== false) {
-    echo 'true';
-}else{ echo "";}
-*/
-//print out bestilling
-/*$bord = "SELECT * FROM borde ORDER BY obord DESC";
-$result = mysqli_query($conn, $bord);
-
-
-while($row = mysqli_fetch_array($result)) {    ?>
-    <div class="choose">
-    <?php
-echo $row['obord'] . " " . $row['aplads'] . " " . $row['nabo'];
-?>
-
-<!-- select table -->
-<form class="chooseButton" method="post" action="">
-    <input type="hidden" name="did" value="<?php print $row['obord']; ?>"/>
-    <input type="submit" value="x" class="select"/>
-
-</form></div><br> <?php }
-*/
-//check oantal to see what tables are needed
-
-/*$query = "SELECT bestilling.oname,bestilling.obord
-FROM bestilling
-LEFT JOIN borde
-ON bestilling.obord=borde.obord
-WHERE aplads='2'
-ORDER BY bestilling.oname;";*/
-/*$query = "SELECT bestilling.ordernr,bestilling.obord
-FROM bestilling
-INNER JOIN borde
-ON bestilling.obord=borde.obord
-WHERE aplads='2';";*/
-
-
-
-//if I check all an amount of times I will need a second check to see if an item is there the same ammount of times
-//I have 3 obord and print out where it joins so I print $a1 $a2 $a3
-//then I run a strpos to check if the string is there more than 2 times and print all that are
-
-/*
-
-$alleborde = "A1, A2, A3, A4, A5, A6, A7, A8, B1, B2, B3, B4, C1, C2";
-$a1 = "A2, A3, A4, A5, A6, A7, A8, B1, B2, B3, B4, C1, C2";
-$a2 = "A1, A3, A4, A5, A6, A7, A8, B1, B2, B3, B4, C1, C2";
-$a3 = "A1, A2, A4, A5, A6, A7, A8, B1, B2, B3, B4, C1, C2";
-$a4 = "A1, A2, A3, A5, A6, A7, A8, B1, B2, B3, B4, C1, C2";
-$a5 = "A1, A2, A3, A4, A6, A7, A8, B1, B2, B3, B4, C1, C2";
-$a6 = "A1, A2, A3, A4, A5, A7, A8, B1, B2, B3, B4, C1, C2";
-$a7 = "A1, A2, A3, A4, A5, A6, A8, B1, B2, B3, B4, C1, C2";
-$a8 = "A1, A2, A3, A4, A5, A6, A7, B1, B2, B3, B4, C1, C2";
-$b1 = "A1, A2, A3, A4, A5, A6, A7, A8, B2, B3, B4, C1, C2";
-$b2 = "A1, A2, A3, A4, A5, A6, A7, A8, B1, B3, B4, C1, C2";
-$b3 = "A1, A2, A3, A4, A5, A6, A7, A8, B1, B2, B4, C1, C2";
-$b4 = "A1, A2, A3, A4, A5, A6, A7, A8, B1, B2, B3, C1, C2";
-$c1 = "A1, A2, A3, A4, A5, A6, A7, A8, B1, B2, B3, B4, C2";
-$c2 = "A1, A2, A3, A4, A5, A6, A7, A8, B1, B2, B3, B4, C1";
-
-*/
-/*
-$a1 = "A2, A3, A4, A5, A6, A7, A8";
-$a2 = "A1, A3, A4, A5, A6, A7, A8";
-$a3 = "A1, A2, A4, A5, A6, A7, A8";
-$a4 = "A1, A2, A3, A5, A6, A7, A8";
-$a5 = "A1, A2, A3, A4, A6, A7, A8";
-$a6 = "A1, A2, A3, A4, A5, A7, A8";
-$a7 = "A1, A2, A3, A4, A5, A6, A8";
-$a8 = "A1, A2, A3, A4, A5, A6, A7";
-
-
-$b1 = "B2, B3, B4";
-$b2 = "B1, B3, B4";
-$b3 = "B1, B2, B4";
-$b4 = "B1, B2, B3";
-
-
-$c1 = "C2";
-$c2 = "C1";
-
-*/
 
 //another solution might be to seperate it into a1-a8, b1-b4, c1-c2 and count each char and number after
 // like the other if I have 3 obord with 2 ammount then I check every number towards the array string
@@ -239,7 +119,7 @@ $c2 = "C1";
 mysqli_select_db($conn, "examserver49_dk_db");
 
 /* ------------------------TEST OF a1-a8-----------------------------------*/
-//nt substr_count ( string $haystack , string $needle [, int $offset = 0 [, int $length ]] )
+
 $a1 = "A2, A3, A4, A5, A6, A7, A8";
 $a2 = "A1, A3, A4, A5, A6, A7, A8";
 $a3 = "A1, A2, A4, A5, A6, A7, A8";
@@ -317,14 +197,7 @@ if ($vantal <= 2) {
             }
             if ((strpos($a7, $row3['obord']) !== false)) {
 
-                /*?> <div class="choose">
-
-                    <!-- too see the print of the buttons -->
-                    <form class="chooseButton" method="post" action="">
-                        <input type="hidden" name="did" value="A7"/>
-                        <input type="submit" value="A7" class="select"/>
-
-                    </form></div><br>       <?php*/
+               
             } else {
 
                 $o7++;
@@ -518,10 +391,6 @@ if (!checkIfValidDate($vdate)) {
 
     Header("refresh:5;url=index.php");
 }
-//if (){
-  //
-    //
-   // }
 
 /* ------------------------------ CHECK IF PRINT -------------------------------------------------------*/
 if ($vantal <= 2){ ?> <div id="a">

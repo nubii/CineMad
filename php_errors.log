@@ -224,3 +224,11 @@
 [08-Dec-2015 18:52:00 UTC] PHP Stack trace:
 [08-Dec-2015 18:52:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/deletepro.php:0
 [08-Dec-2015 18:52:00 UTC] PHP   2. unlink(*uninitialized*) /home/ubuntu/workspace/admin/deletepro.php:15
+[08-Dec-2015 19:38:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/admin/reservations.php on line 32
+[08-Dec-2015 19:38:39 UTC] PHP Stack trace:
+[08-Dec-2015 19:38:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/reservations.php:0
+[08-Dec-2015 19:38:39 UTC] PHP   2. mysqli_query(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/admin/reservations.php:32
+[08-Dec-2015 19:38:39 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/admin/reservations.php on line 34
+[08-Dec-2015 19:38:39 UTC] PHP Stack trace:
+[08-Dec-2015 19:38:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/reservations.php:0
+[08-Dec-2015 19:38:39 UTC] PHP   2. mysqli_fetch_array(*uninitialized*) /home/ubuntu/workspace/admin/reservations.php:34

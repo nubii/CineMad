@@ -33,6 +33,6 @@ $result = mysqli_query($connection, $query) or die('Error, query failed');
 <?php
 mysqli_close($connection);
 
-// Redirect to delete.php.
+// Redirect to news.php.
 header("location:news.php");
 ?> 

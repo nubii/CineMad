@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="CSS/style.css" type="text/css">
+
 <?php require_once("admin/includes/connection.php"); ?>
 <?php define( "TITLE", "Time | CineMad"); include( 'includes/header.php'); ?>
 <!--========================================================
@@ -7,61 +7,17 @@
 <main>
     <section class="well well__offset-3">
         <?php
-/*$conn = mysqli_connect("mysql31.unoeuro.com","examserver4_dk8","4pf3kmta");
 
-if(!$conn){
-    die("could not connect: ". mysqli_error($conn));
-}
-mysqli_set_charset($conn, "utf8");
-mysqli_select_db($conn, "examserver49_dk_db");
-*/
-//local -------------------------------------------------------------
-/*$conn = mysqli_connect("localhost","root","pwd");
-
-if(!$conn){
-    die("could not connect: ". mysqli_error($conn));
-}
-mysqli_set_charset($conn, "utf8");
-mysqli_select_db($conn, "restaurant");*/
-//print out bestilling
-    //print out end--------------------------------------------------------------
-
-//sdate= selected date
-//alt med o+ord er fra bestilling
-//vdate= chosen date
-//$sdate = "$_POST[sdate]";
-
-/*$conn = mysqli_connect("localhost","root","pwd");
-
-if(!$conn){
-    die("could not connect: ". mysqli_error($conn));
-}
-mysqli_select_db($conn, "table");
-
-$sql = "UPDATE guestbook SET comment ='$_POST[ucomment]' WHERE id = '$_POST[uid]'";
-if (mysqli_query($conn, $sql)) {
-    {header('Location: ' . $_SERVER['HTTP_REFERER']);}
-}
-*/
-
-//Check for tables available today at 18:00 (tid and dato)
 
 
 $day = date("N");
 $vantal = 4;
-//$day = date("N");
-//$vtid = "T5";
-//echo $vdate. " " .$vtid . " " .$day. "<br>";
+
 if ($_POST == true){ 
     $vdate = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['cdate'])));
     $vdate = "$_POST[cdate]";
 } else {$vdate = date("d-m-Y"); $vtid = "T5, T6";}
-//$vdate = "$_POST[sdate]";
 
-//echo $vdate. " " .$vtid . " " .$day. " " . $vantal;
-//after that check (tid and date) where vtid and vdate is === to each other
-
-//if not available set
 
 
 ?>
@@ -74,7 +30,7 @@ if ($_POST == true){
     Date: <?php echo $vdate; ?> <input type="hidden" value="<?php echo $vdate; ?>" name="odate">
     Time:<select name="otid">
         <option value="errortid" name="otid">Please select a time</option>
-        <?php //checks if the date input from !!!! LACKS UPDATE ON CLICK JS or something like that when date is clicked or maybe socket input
+        <?php //checks if the date input from
 
         $inputDate = $_POST['cdate'];
         $inputDateArray = explode('-', $inputDate);
@@ -205,35 +161,3 @@ if ($_POST == true){
     </section>
 </main>
 <?php include( 'includes/footer.php'); ?>
-
-    <!-- ---------------------- find table submit end ----------------------------- -->
-    <!-- ---------------------- order table submit ----------------------------- -->
-    <!-- ordernr  odate  oantal  otid  oname  ophone  tid  otimestamp -->
-    <!-- ---------------------- order table submit end ----------------------------- -->
-
-
-<!--
-
-<div class="borde">
-
-
-
-
-
-
-    //ordernr  odate  oantal  otid  oname  ophone  tid  otimestamp
-    //if day time and ammount of people is available
-    $id = 1;
-    while ($id <= 10):
-        echo $id;
-        $id++;
-    endwhile;
-    ?>
-</div>
--->
-
-
-<?php
-
-
-?>
