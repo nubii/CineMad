@@ -21,13 +21,12 @@ $regexp = "/^[^0-9][A-z0-9_-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_-]+)*[.][
 
 if (!preg_match($regexp,$mymail))
 	  {
-	  	echo "hallojsa1";
-	  	echo $_POST['email'];
-		  header("https://limitless-brushlands-5886.herokuapp.com/contact.php?error=1");}
+		  header("Location: http://cinemad2-nubii123.c9.io/contact.php?error=1");
+		 }
  elseif (empty($firstname) || empty($message) || empty($lastname)) 
 	{
-		echo "hallojsa2";
-		header("Location:https://limitless-brushlands-5886.herokuapp.com/contact.php?error=2&'$lastname'");}
+		header("Location: http://cinemad2-nubii123.c9.io/contact.php?error=2&'$lastname'");
+	}
 
  elseif ($_POST['submit'])
 {
@@ -35,6 +34,6 @@ if (!preg_match($regexp,$mymail))
 	$body = "$message\n\nName: $firstname $lastname";
 	mail($mymail,$subject,$body,"From: $email\n");
 
-		header("Location:https://limitless-brushlands-5886.herokuapp.com/contact.php?done=1");;
+		header("Location: http://cinemad2-nubii123.c9.io/contact.php?done=1");;
 }
 ?>
