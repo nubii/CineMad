@@ -32,7 +32,7 @@ if (!preg_match($regexp,$mymail))
  else
 {
 	echo "hallojsa3";
-	$body = "$message\n\nName: $firstname $lastname";
+	$body = "$message\n\n Name: $firstname $lastname";
 	mail($mymail,$subject,$body,"From: $email\n");
 
 		header("Location: http://cinemad2-nubii123.c9.io/contact.php?done=1");;
