@@ -26,7 +26,7 @@
 								
 								<label class="name">
                                     Last Name:
-                                    <input type="text" name="lasstname" placeholder="" value=""
+                                    <input type="text" name="lastname" placeholder="" value=""
                                            data-constraints="@Required @JustLetters"/>                
                                     <span class="empty-message">*This field is required.</span>
                                     <span class="error-message">*This is not a valid name.</span>

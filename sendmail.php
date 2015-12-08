@@ -13,7 +13,7 @@ $row = mysqli_fetch_array($result);
 
 <?php
 $mymail = $row['email'];
-$firstname = $POST['firstname'];
+$firstname = $_POST['firstname'];
 $lasttname = $_POST['lastname'];
 $message = $_POST['message'];
 $regexp = "/^[^0-9][A-z0-9_-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_-]+)*[.][A-z]{2,4}$/";
