@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/datatable/assets/skins/night/datatable.css">
 <link rel="stylesheet" href="CSS/style.css" type="text/css">
 
-<?php define( "TITLE", "Time | CineMad"); include( 'includes/header.php'); ?>
+<?php define( "TITLE", "Date | CineMad"); include( 'includes/header.php'); ?>
 <!--========================================================
                               CONTENT
     =========================================================-->
@@ -17,8 +17,9 @@
 </style>
 <body class="yui3-skin-sam">
 
-<main>
-    <section class="well well__offset-3">
+ <main>
+        <section class="well well__offset-3">
+            <div class="container">
 <!-- Add an additional blue button style -->
 <div id="demo" class="yui3-skin-sam yui3-g"> <!-- You need this skin class -->
 
@@ -111,6 +112,7 @@
     });
 
 </script>
+</div>
 </section>
 </main>
 <?php include( 'includes/footer.php'); ?>

@@ -8,8 +8,8 @@
         <section class="well well__offset-3">
 
 <?php
-$id=$_GET['id'];
-$dish=$_GET['dish'];
+$id= trim(htmlspecialchars(mysqli_real_escape_string($_GET['id'])));
+$dish= trim(htmlspecialchars(mysqli_real_escape_string($_GET['dish'])));
 
 ?>
 

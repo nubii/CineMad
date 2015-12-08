@@ -64,7 +64,9 @@ if ($_POST == true){
 
 
 ?>
-
+ <main>
+        <section class="well well__offset-3">
+            <div class="container">
     What time do you wish to eat?
     <!-- ---------------------- find table submit ----------------------------- -->
 <form action="reservation.php" method="post">
@@ -198,6 +200,7 @@ if ($_POST == true){
     <input type="submit">
 
 </form>
+</div>
     </section>
 </main>
 <?php include( 'includes/footer.php'); ?>

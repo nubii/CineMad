@@ -27,6 +27,7 @@ if (!preg_match($regexp,$_POST['email']))
 
  elseif ($_POST['submit'])
 {
+	echo "hallojsa";
 	$body = "$message\n\nE-mail: $email";
 	mail($mymail,$subject,$body,"From: $email\n");
 
