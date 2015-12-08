@@ -42,21 +42,14 @@
     <header>
 
         <div id="stuck_container" class="stuck_container">
-            <div class="container">
+            <div class="container" style="
+    width: 90%;">
 
                 <div class="brand">
                     <h1 class="brand_name">
                         <a href="./"><?php echo $companyName; ?></a>
                     </h1>
                 </div>
-
-
-        <php  
-        $query = "INSERT INTO img_upload (filename
-						) VALUES ('{$image}'
-						)";
-        $result = mysqli_query($connection, $query); 
-        ?>
 
                 <nav class="nav">
                     <ul class="sf-menu">
