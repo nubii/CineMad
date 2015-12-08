@@ -13,8 +13,8 @@ $row = mysqli_fetch_array($result);
 
 <?php
 $mymail = $row['email'];
-$firstname = $row['firstname'];
-$lasttname = $row['lastname'];
+$firstname = $POST['firstname'];
+$lasttname = $_POST['lastname'];
 $message = $_POST['message'];
 $regexp = "/^[^0-9][A-z0-9_-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_-]+)*[.][A-z]{2,4}$/";
 
@@ -31,7 +31,7 @@ if (!preg_match($regexp,$mymail))
  elseif ($_POST['submit'])
 {
 	echo "hallojsa3";
-	$body = "$message\n\nE-mail: $email";
+	$body = "$message\n\nName: $firstname $lastname";
 	mail($mymail,$subject,$body,"From: $email\n");
 
 		header("Location:https://limitless-brushlands-5886.herokuapp.com/contact.php?done=1");;
