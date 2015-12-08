@@ -6,16 +6,17 @@
 
 
 <?php
-$title = $_POST['title'];
-$day = $_POST['day'];
-$content = $_POST['content'];
-$dailyspecial_id = $_POST['dailyspecial_id'];
+$title = trim(htmlspecialchars(mysqli_real_escape_string($_POST['title'])));
+$day = trim(htmlspecialchars(mysqli_real_escape_string($_POST['day'])));
+$content = trim(htmlspecialchars(mysqli_real_escape_string($_POST['content'])));
+$dailyspecial_id = trim(htmlspecialchars(mysqli_real_escape_string($_POST['dailyspecial_id'])));
 
 ?>
 
 <?php
 $query = "UPDATE `examserver49_dk_db`.`dailyspecial` SET `title` = '$title', `blurb` = '$content', `day` = '$day' WHERE `dailyspecial`.`dailyspecial_id` = '$dailyspecial_id'";
 $result = mysqli_query($connection, $query) or die('Error, query failed');
+
 
 
 mysqli_close($connection);
