@@ -12,7 +12,7 @@ $row = mysqli_fetch_array($result);
 
 
 <?php
-$mymail = $row['email'];
+$mymail = "nubii123@gmail.com";
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $message = $_POST['message'];
@@ -21,14 +21,15 @@ $regexp = "/^[^0-9][A-z0-9_-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_-]+)*[.][
 
 if (!preg_match($regexp,$mymail))
 	  {
+	  	echo $lastname;
 		  header("Location: http://cinemad2-nubii123.c9.io/contact.php?error=1");
 		 }
- elseif (empty($firstname) || empty($message) || empty($lastname)) 
-	{
-		header("Location: http://cinemad2-nubii123.c9.io/contact.php?error=2&'$lastname'");
-	}
+// elseif (empty($firstname) || empty($message) || empty($lastname)) 
+//	{
+//		header("Location: http://cinemad2-nubii123.c9.io/contact.php?error=2&'$lastname'");
+//	}
 
- elseif ($_POST['submit'])
+ else
 {
 	echo "hallojsa3";
 	$body = "$message\n\nName: $firstname $lastname";
