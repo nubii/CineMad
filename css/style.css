@@ -1044,5 +1044,118 @@ footer .tm {
     margin-right: auto;
     float: none;
 }
-  
+  /* ============================== Martin bordbestilling og table ================================================= */
+.choose{
+  position: relative;
+  float: left;
+  height: 30px;
+  width: 73px;
+  display: block;
+}
+.holdtarget{
+  width: 200px;
+}
+.target{
+  position: relative;
+  float: right;
+  background-color: #999999;
+  display: block;
+}
+.content{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 180px;
+  height: 60px;
+  padding: 20px;
+  margin-top: -40px;
+  margin-left: -100px;
+  background-color: #fef;
+  border: solid 1px #f00;
+}
+.wrapper {
+  position: relative;
+  background-color: #EEE;
+  width: 200px;
+  height: 200px;
+  font-size: 10px;
+}
+.error{
+  color: #f00;
+}
+.timeCheckDay{
+  float: left;
+  margin: 10px;
+}
+#visualtable{
+  position: relative;
+  width: 820px;
+  height: 820px;
+  margin: auto;
+}
+#ordertablebg{
+  position: relative;
+  height: 820px;
+}
+#a input {
+  position: absolute;
+  padding: 3px;
+  top: -762px;
+  left: 382px;
+}
+#b input {
+  position: absolute;
+  padding: 5px;
+  top: -478px;
+  left: 478px;
+}
+#c input {
+  position: absolute;
+  padding: 8px;
+  top: -118px;
+  left: 131px;
+}
+.a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .b1, .b2, .b3, .b4, .c1, .c2{
+  position: absolute;
+}
+.a2{
+  left: 63px;
+}
+.a3{
+  left: 200px;
+}
+.a4{
+  left: 262px;
+}
+.a5 {
+  margin-top: 92px;
+  left: 0px;
+}
+.a6 {
+  margin-top: 92px;
+  left: 63px;
+}
+.a7 {
+  margin-top: 92px;
+  left: 200px;
+}
+.a8{
+  margin-top: 92px;
+  left: 262px;
+}
+.b2 {
+  left: 147px;
+}
+.b3 {
+  margin-top: 98px;
+}
+.b4 {
+  margin-top: 98px;
+  left: 147px;
+}
+.c2{
+  left: 147px;
+}
+.c3{
+  left: 73px;
 }

@@ -18,11 +18,12 @@ $lasttname = $row['lastname'];
 $message = $_POST['message'];
 $regexp = "/^[^0-9][A-z0-9_-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_-]+)*[.][A-z]{2,4}$/";
 
-if (!preg_match($regexp,$_POST['email']))
+if (!preg_match($regexp,$mymail))
 	  {
 	  	echo "hallojsa1";
+	  	echo $_POST['email'];
 		  header("https://limitless-brushlands-5886.herokuapp.com/contact.php?error=1");}
- elseif (empty($email) || empty($message) || empty($subject)) 
+ elseif (empty($firstname) || empty($message) || empty($lastname)) 
 	{
 		echo "hallojsa2";
 		header("Location:https://limitless-brushlands-5886.herokuapp.com/contact.php?error=2");}
