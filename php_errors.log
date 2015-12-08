@@ -219,3 +219,4 @@
 [08-Dec-2015 12:47:19 UTC] PHP Stack trace:
 [08-Dec-2015 12:47:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/changeimage.php:0
 [08-Dec-2015 12:47:19 UTC] PHP   2. mysqli_real_escape_string(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/admin/changeimage.php:11
+[08-Dec-2015 18:39:30 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/admin/openinghours.php on line 33

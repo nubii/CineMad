@@ -1,3 +1,7 @@
+<?php require_once("includes/connection.php"); ?>
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+<?php confirm_logged_in(); ?>
 <?php define( "TITLE", "Reservation | CineMad"); include( 'includes/header.php'); ?>
 <!--========================================================
                               CONTENT
@@ -8,13 +12,7 @@
 <!--  ----------------------------- time select checkbox  ------------------------------------------------ -->
     Openinghours<br>
 <form method="post" action="editopeninghours.php">
-<?php include('includes/header.php'); /*   $conn = mysqli_connect("localhost","root","pwd");
-
-    if(!$conn){
-    die("could not connect: ". mysqli_error($conn));
-    }
-    mysqli_set_charset($conn, "utf8");
-    mysqli_select_db($conn, "restaurant");*/
+<?php 
  $tider = "SELECT * FROM tider ORDER BY timeid ASC";
 $result = mysqli_query($conn, $tider);
 

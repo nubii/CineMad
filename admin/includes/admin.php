@@ -7,7 +7,7 @@
 		
 			
 		if	($row['access'] == 0) {
-			    redirect_to("bordbestilling.php");
+			    redirect_to("reservations.php");
 
 			}
 		}
