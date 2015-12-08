@@ -20,14 +20,16 @@ $regexp = "/^[^0-9][A-z0-9_-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_-]+)*[.][
 
 if (!preg_match($regexp,$_POST['email']))
 	  {
+	  	echo "hallojsa1";
 		  header("https://limitless-brushlands-5886.herokuapp.com/contact.php?error=1");}
  elseif (empty($email) || empty($message) || empty($subject)) 
 	{
+		echo "hallojsa2";
 		header("Location:https://limitless-brushlands-5886.herokuapp.com/contact.php?error=2");}
 
  elseif ($_POST['submit'])
 {
-	echo "hallojsa";
+	echo "hallojsa3";
 	$body = "$message\n\nE-mail: $email";
 	mail($mymail,$subject,$body,"From: $email\n");
 
