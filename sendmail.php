@@ -1,40 +1,22 @@
-<?php $conn = mysqli_connect("mysql31.unoeuro.com","examserver4_dk8","4pf3kmta");
-
-if(!$conn){
-    die("could not connect: ". mysqli_error($conn));
-}
-mysqli_set_charset($conn, "utf8");
-mysqli_select_db($conn, "examserver49_dk_db");
-$menu = "SELECT * FROM  contact";
-$result = mysqli_query($conn, $menu);
-$row = mysqli_fetch_array($result);
-?>
-
-
 <?php
 $mymail = "nubii123@gmail.com";
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
-
 $regexp = "/^[^0-9][A-z0-9_-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_-]+)*[.][A-z]{2,4}$/";
 
-if (!preg_match($regexp,$mymail))
+if (!preg_match($regexp,$_POST['email']))
 	  {
-	  	echo $lastname;
-		  header("Location: http://cinemad2-nubii123.c9.io/contact.php?error=1");
-		 }
-// elseif (empty($firstname) || empty($message) || empty($lastname)) 
-//	{
-//		header("Location: http://cinemad2-nubii123.c9.io/contact.php?error=2&'$lastname'");
-//	}
+		  header("Location:http://cinemad2-nubii123.c9.io/contact.php?error=1");}
+elseif (empty($email) || empty($message) || empty($subject)) 
+	{
+		header("Location:http://cinemad2-nubii123.c9.io/contact.php?error=2");}
 
- else
+else
 {
-	echo "hallojsa3";
-	$body = "$message\n\n Name: $firstname $lastname";
+	$body = "$message\n\nE-mail: $email";
 	mail($mymail,$subject,$body,"From: $email\n");
 
-		header("Location: http://cinemad2-nubii123.c9.io/contact.php?done=1");;
+	header("Location: http://cinemad2-nubii123.c9.io/contact.php?done=1");;
 }
 ?>

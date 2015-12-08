@@ -10,60 +10,33 @@
         <section class="well well__offset-3">
             <div class="container">
                 <h2><em>Our</em>Contacts</h2>
-                <div class="row box-3">
+               <div class="row box-3">
                     <div class="grid_5">
-                        <h2>Contacts Form</h2>
-                        <form id="contact-form" class='contact-form' action="sendmail.php" method="post">
-                            <div class="contact-form-loader"></div>
+                        <h2>Send us an email</h2>
+                        <form id="contact-form" class='contact-form' form action="sendmail.php" method="post">
                             <fieldset>
                                 <label class="name">
-                                    First Name:
-                                    <input type="text" name="firstname" placeholder="" value=""
-                                           data-constraints="@Required"/>                
-                                    <span class="empty-message">*This field is required.</span>
-                                    <span class="error-message">*This is not a valid name.</span>
+                                    Email:
+                                    <input type="text" name="email" placeholder="" value=""/>
                                 </label>
 								
 								<label class="name">
-                                    Last Name:
-                                    <input type="text" name="lastname" placeholder="" value=""
-                                           data-constraints="@Required"/>                
-                                    <span class="empty-message">*This field is required.</span>
-                                    <span class="error-message">*This is not a valid name.</span>
+                                    Subject:
+                                    <input type="text" name="subject" placeholder="" value=""/>
                                 </label>
                 
                
                 
                                 <label class="message">
                                     Message:
-                                    <textarea name="message" placeholder=""
-                                              data-constraints='@Required'></textarea>                
-                                    <span class="empty-message">*This field is required.</span>
-                                    <span class="error-message">*The message is too short.</span>
+                                    <textarea name="message" placeholder=""></textarea>
                                 </label>
                 
                                 <div class="btn-wr">
-                                    <input type="submit" name="send mail" value="Send mail" />
-                                    <a class="" href="#" data-type="reset">Clear</a>
+									<input type="submit"/>
                                 </div>
-                            </fieldset>
-                            <div class="modal fade response-message">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal"
-                                                    aria-hidden="true">
-                                                &times;
-                                            </button>
-                                            <h4 class="modal-title">Modal title</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            You message has been sent! We will be in touch soon.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+							</fieldset>
+						</form>
                     </div>    
                     <div class="preffix_1 grid_6">
                         <h2>Contacts Information</h2>
