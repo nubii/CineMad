@@ -10,14 +10,14 @@
     <section class="well well__offset-3">
 <div class="container">
 <!--  ----------------------------- time select checkbox  ------------------------------------------------ -->
-    Openinghours<br>
-<form method="post" action="editopeninghours.php">
+    <h2>Opening Hours</h2><br>
+<form method="post" action="editopeninghours.php" style="width: 1180px;">
 <?php 
  $tider = "SELECT * FROM tider ORDER BY timeid ASC";
 $result = mysqli_query($conn, $tider);
 
 while($row = mysqli_fetch_array($result)) {
-    if ($row['tid'] == "T1"){
+    if ($row['tid'] == "T01"){
         echo  '<div class="timeCheckDay">' . $row['tday'] . "<br>";
         }
    ?><?php    echo  $row['tider']?>:00
@@ -27,24 +27,13 @@ while($row = mysqli_fetch_array($result)) {
     if ($row['tid'] == "T13"){
     echo "</div>";
         }
-/*if(){
-   echo 'checked="checked"';
-}*/
 
 } ?>
   <input type="submit" name="submit" value="submit">
 </form>
-<!--
-<form method="post" action="">
-    <input type="checkbox" name="openhouse[]" value="booom" <?php //if ($row['openhours'] == "true"){echo "checked='checked'";} ?> >
-<input type="submit" name="submit" value="submit">
-</form> -->
+
 <?php
-/*if(isset($_POST['submit'])&&$_POST['submit']=='add'){
-$time_string = $_POST['opentimes[]'];
-print_r($time_string);
-    echo "hello";
-}*/
+
 if(isset($_POST['submit'])){
     if(!empty($_POST['check_list'])) {
 
