@@ -1,6 +1,5 @@
 
 <?php define( "TITLE", "Reservation | CineMad"); include( 'includes/header.php'); ?>
-<?php require_once("admin/includes/connection.php"); ?>
 <!--========================================================
                               CONTENT
     =========================================================-->
@@ -14,7 +13,6 @@ $vdate = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['odate'])
 $vtid = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['otid'])));
 $vantal = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['oantal'])));
 } else { echo "error";}// later add a return to main page if no valid post
-echo $vdate. " " .$vtid . " " .$vantal;
 //print out--------------------------------------------------------------
 ?><div id="visualtable"> <img src="img/tables.jpg" alt="tables" id="ordertablebg">
 <?php
@@ -261,7 +259,7 @@ $query = "SELECT bestilling.obord,borde.obord, bestilling.otid, bestilling.otidt
 FROM bestilling
 LEFT JOIN borde
 ON borde.obord=bestilling.obord
-WHERE aplads='2' AND odate='$_POST[odate]'
+WHERE aplads='2' AND odate='$vdate'
 ORDER BY bestilling.obord;";
 
 $result3 = mysqli_query($conn, $query);
@@ -279,7 +277,6 @@ if ($vantal <= 2) {
     $q2++;
 
     while ($row3 = mysqli_fetch_array($result3)) {
-
         if ((strpos($vtid, $row3['otid']) !== false) || (strpos($vtid, $row3['otidto']) !== false) && $vdate == $row3['odate']) {
 
             if ((strpos($a1, $row3['obord']) !== false)) {
@@ -361,7 +358,7 @@ if ($vantal <= 2) {
 FROM bestilling
 LEFT JOIN borde
 ON borde.obord=bestilling.obord
-WHERE aplads='4' AND odate='$_POST[odate]'
+WHERE aplads='4' AND odate='$vdate'
 ORDER BY bestilling.obord;";
 
     $result = mysqli_query($conn, $query);
@@ -426,7 +423,7 @@ $query = "SELECT bestilling.obord,borde.obord, bestilling.otid, bestilling.otidt
 FROM bestilling
 LEFT JOIN borde
 ON borde.obord=bestilling.obord
-WHERE aplads='8' AND odate='$_POST[odate]'
+WHERE aplads='8' AND odate='$vdate'
 ORDER BY bestilling.obord;";
 
 $result3 = mysqli_query($conn, $query);
@@ -780,7 +777,7 @@ if ($o1+$o2+$o3+$o4+$o5+$o6+$o7+$o8 > 7){
 FROM bestilling
 LEFT JOIN borde
 ON borde.obord=bestilling.obord
-WHERE aplads='4' AND odate='$_POST[odate]'
+WHERE aplads='4' AND odate='$vdate'
 ORDER BY bestilling.obord;";
 
     $result = mysqli_query($conn, $query);
@@ -907,7 +904,7 @@ if ($p1+$p2+$p3+$p4 > 7 ){
 FROM bestilling
 LEFT JOIN borde
 ON borde.obord=bestilling.obord
-WHERE aplads='8' AND odate='$_POST[odate]'
+WHERE aplads='8' AND odate='$vdate'
 ORDER BY bestilling.obord;";
 
     $result3 = mysqli_query($conn, $query);
@@ -1005,7 +1002,7 @@ if ($q1+$q2 > 3){
 }
 
 if ($o8 == 0 && $o7 == 0 && $o6 == 0 && $o5 == 0 && $o4 == 0 && $o3 == 0 && $o2 == 0 && $o1 == 0 && $p1 > 0 && $p2 > 0 && $p3 > 0 && $p4 > 0 && $q1 > 0 && $q2 > 0) {
-    echo "please select another time";
+    echo "";
 }
 
 if ($o8 > 0 && $o7 > 0 && $o6 > 0 && $o5 > 0 && $o4 > 0 && $o3 > 0 && $o2 > 0 && $o1 > 0 && $p1 > 0 && $p2 > 0 && $p3 > 0 && $p4 > 0 && $q1 > 0 && $q2 > 0) {

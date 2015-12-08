@@ -7,7 +7,7 @@
 <?php define( "TITLE", "Images | Admin Panel"); include( 'includes/header.php'); ?>
 
 <?php
-$dish = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['item'])));
+$dish = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_GET['item'])));
 $menu = "SELECT * FROM  menuItems WHERE menu_url ='$dish' ";
 $result = mysqli_query($conn, $menu);
 $row = mysqli_fetch_array($result);

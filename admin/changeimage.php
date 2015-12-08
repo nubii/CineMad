@@ -8,9 +8,8 @@
         <section class="well well__offset-3">
 
 <?php
-$id= trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['id'])));
-$dish= trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['dish'])));
-
+$id= trim(htmlspecialchars(mysqli_real_escape_string($connection, $_GET['id'])));
+$dish= trim(htmlspecialchars(mysqli_real_escape_string($connection, $_GET['dish'])));
 ?>
 
 <?php
@@ -33,5 +32,6 @@ $result = mysqli_query($connection, $query) or die('Error, query failed');
 mysqli_close($connection);
 
 // Redirect to delete.php.
-header("location:menu.php");
+//header("location:menu.php");
+
 ?> 

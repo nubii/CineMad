@@ -7,7 +7,7 @@
 <?php define( "TITLE", "Images | Admin Panel"); include( 'includes/header.php'); ?>
 
 <?php
-$news = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['item'])));
+$news = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_GET['item'])));
 $menu = "SELECT * FROM  news WHERE news_id ='$news' ";
 $result = mysqli_query($conn, $menu);
 $row = mysqli_fetch_array($result);

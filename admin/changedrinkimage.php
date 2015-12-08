@@ -9,8 +9,8 @@
 
 <?php
 
-$id = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['id'])));
-$drink = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_GET['drink'])));
+$id = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_GET['id'])));
+$drink = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_GET['drink'])));
 
 ?>
 

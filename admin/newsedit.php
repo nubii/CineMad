@@ -6,9 +6,9 @@
 
 
 <?php
-$title = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['title'])));
-$content = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['content'])));
-$news_id = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['news_id'])));
+$title = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['title'])));
+$content = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['content'])));
+$news_id = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['news_id'])));
 ?>
 
 <?php

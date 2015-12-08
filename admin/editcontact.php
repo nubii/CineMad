@@ -6,13 +6,13 @@
 
 
 <?php
-$fax = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['fax'])));
-$address = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['address'])));
-$telefone = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['telefone'])));
-$content = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['content'])));
-$email = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['email'])));
-$hours = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['hours'])));
-$id = trim(htmlspecialchars(mysqli_real_escape_string($conn, $_POST['id'])));
+$fax = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['fax'])));
+$address = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['address'])));
+$telefone = trim(htmlspecialchars(mysqli_real_escape_string($connection,, $_POST['telefone'])));
+$content = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['content'])));
+$email = trim(htmlspecialchars(mysqli_real_escape_string($connection,, $_POST['email'])));
+$hours = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['hours'])));
+$id = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['id'])));
 
 
 ?>
