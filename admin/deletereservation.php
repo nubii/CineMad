@@ -5,13 +5,8 @@
 <?php require_once("includes/admin.php"); ?><?php
 include('includes/header.php');
 //print out--------------------------------------------------------------
-/*$conn = mysqli_connect("localhost","root","pwd");
-
-if(!$conn){
-    die("could not connect: ". mysqli_error($conn));
-}
-mysqli_select_db($conn, "restaurant");*/
-$sql = "DELETE FROM bestilling WHERE ordernr = '$_POST[did]'";
+$id = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['did'])));
+$sql = "DELETE FROM bestilling WHERE ordernr = '$id'";
 if (mysqli_query($conn, $sql))
-{        echo("<script>location.href = 'index.php';</script>");}
+{        echo("<script>location.href = 'reservation.php';</script>");}
 mysqli_close($conn);

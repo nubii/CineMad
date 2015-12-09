@@ -177,7 +177,8 @@ while($row = mysqli_fetch_array($result))
         </section>
         <section class="well well__offset-2">
             <div class="container center">
-                <h2><em>Make </em>a Reservation</h2>
+                
+                <h2><em>Make </em>a <a href="date.php">Reservation</a></h2>
                 <p class="indents-2">Fnteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol.</p>
                 <address class="address-1">
                     <dl><dt>Address:</dt> <dd>4578 Marmora Road, Glasgow DA04 89GR</dd></dl>
