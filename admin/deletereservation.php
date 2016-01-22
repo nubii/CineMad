@@ -8,5 +8,5 @@ include('includes/header.php');
 $id = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['did'])));
 $sql = "DELETE FROM bestilling WHERE ordernr = '$id'";
 if (mysqli_query($conn, $sql))
-{        echo("<script>location.href = 'reservation.php';</script>");}
+{        echo("<script>location.href = 'index.php';</script>");}
 mysqli_close($conn);
