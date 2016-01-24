@@ -76,7 +76,7 @@ if (!empty($message)) {echo "<p>" . $message . "</p>";} ?>
 
                 <div class="brand">
                     <h1 class="brand_name">
-                        <a href="./"><?php echo $companyName; ?></a>
+                        <a href="../"><?php echo $companyName; ?></a>
                     </h1>
                 </div>
 
