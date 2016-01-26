@@ -11,7 +11,7 @@
 <main>
     <section class="well well__offset-3">
         <div class="container">
-            <h2><em>Welcome back</em>To the admin panel <?php echo $_SESSION['user_name'];?></h2>
+            <h2><em>Welcome back</em>To the admin panel <strong style="text-transform: capitalize;"><?php echo $_SESSION['user_name'];?></strong></h2>
                 <p style="font-size: 2em;">This is the place for the master mind, not just any master mind but <i style="font-style: italic;">your</i> mastermind.</p>
     </div>
 
