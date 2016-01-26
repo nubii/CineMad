@@ -15,6 +15,18 @@
     }
 
     tr:nth-child(even){background-color: #f2f2f2 !important;}
+    
+    
+    ul li:last-child {
+    display: block;
+    }
+    
+    ul li {
+        display: none;
+    }
+
+
+    
 </style>
 <!--========================================================
                               CONTENT

@@ -58,7 +58,7 @@
                 mysqli_query($sql_con,"INSERT INTO voting_count (unique_content_id, vote_down) value('$unique_content_id',1)");
             }
             
-            setcookie("voted_".$unique_content_id, 1, time()+7200);  // set cookie that expires in 2 hour "time()+7200".
+            setcookie("voted_".$unique_content_id, 1, time()+7200);  // set cookie that expires in 2 hour "time()+7200". 60 sec * 60 min * 2 hours
             echo ($get_total_rows["vote_down"]+1);//display total disliked votes
         }
     
